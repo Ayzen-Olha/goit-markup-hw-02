@@ -8,6 +8,7 @@
     --footer-color: rgba(255, 255, 255, 0.6);
     --btn-color: #F5F4FA;
     --bgc-team-section: #f5f4fa;
+    --color-logo-header: #000000;
 }
 
 body {
@@ -22,6 +23,10 @@ body {
 
 h1,h2,h3,h4,h5,h6 {
     color: var(--title-text-color);
+}
+
+a {
+    text-decoration: none;
 }
 
 .list {
@@ -41,6 +46,18 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 26px;
     font-weight: bold;
     line-height: 1.2;
+}
+
+.logo-link {
+    color: var(--accent-text-color);
+}
+
+.studio-header {
+    color: var(--color-logo-header);
+}
+
+.studio-footer {
+    color: var(--white-color);
 }
 
 /* nav */
@@ -78,16 +95,30 @@ h1,h2,h3,h4,h5,h6 {
 .hero-title {
     color: var(--white-color);
     font-size: 44px;
+    font-weight: 900;
+    text-transform: uppercase;
 }
 
 /* btn */
 
-.button-hero {
+.button {
     font-size: 16px;
+    cursor: pointer;
+    font-family: Roboto, sans-serif;
+}
+
+.button-hero {
     font-weight: bold;
     line-height: 1.9;
     background-color: var(--accent-text-color);
     color: var(--white-color);
+}
+
+.filter {
+    font-weight: 500;
+    line-height: 1.6;
+    background-color: var(--btn-color);
+    color: var(--title-text-color);
 }
 
 /* main index.html */
@@ -96,6 +127,7 @@ h1,h2,h3,h4,h5,h6 {
 .benefits-title {
     font-weight: bold;
     font-size: 14px;
+    text-transform:uppercase;
 }
 
 /* activity */
@@ -119,17 +151,21 @@ h1,h2,h3,h4,h5,h6 {
     line-height: 1.2;
 }
 
-/* портфоліо */
-/* портфоліо btn */
+.caption {
+    font-weight: 500;
+}
 
-.button-filter {
+/* портфоліо */
+/* btn */
+
+/* .button-filter {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
     background-color: var(--btn-color);
     color: var(--title-text-color);
     cursor: pointer;
-}
+} */
 
 .filter-nav :hover,
 .filter-nav :focus{
@@ -153,6 +189,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .footer {
     background-color: var(--minor-bg-color);
+    line-height: 1.7;
 }
 
 .address {
